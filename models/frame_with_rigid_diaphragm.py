@@ -19,6 +19,7 @@ from matplotlib.animation import FuncAnimation, PillowWriter
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 FIGURES_DIR = PROJECT_ROOT / "results" / "figures"
 ANIMATIONS_DIR = PROJECT_ROOT / "results" / "animations"
+MATRICES_DIR = PROJECT_ROOT / "results" / "matrices"
 
 
 def build_three_story_one_bay_frame(rigid_diaphragm=True):
@@ -191,9 +192,118 @@ def get_rigid_diaphragm_mode_shapes(node_tags, num_modes=3, num_stories=3):
     return mode_shapes
 
 
+def save_matrix_csv(output_path, labels, matrix):
+    with output_path.open("w", encoding="utf-8") as file:
+        file.write("," + ",".join(labels) + "\n")
+        for label, row in zip(labels, matrix):
+            file.write(label + "," + ",".join(f"{value:.10e}" for value in row) + "\n")
+    return output_path
+
+
+def save_matrix_heatmap(output_path, labels, matrix, title):
+    fig, ax = plt.subplots(figsize=(8.0, 6.5))
+    max_abs = max(abs(value) for row in matrix for value in row) or 1.0
+    image = ax.imshow(matrix, cmap="coolwarm", vmin=-max_abs, vmax=max_abs)
+
+    ax.set_title(title)
+    ax.set_xticks(range(len(labels)))
+    ax.set_yticks(range(len(labels)))
+    ax.set_xticklabels(labels, rotation=90)
+    ax.set_yticklabels(labels)
+    fig.colorbar(image, ax=ax, shrink=0.82)
+    fig.tight_layout()
+    fig.savefig(output_path, dpi=200)
+    plt.close(fig)
+    return output_path
+
+
+def summarize_matrix(name, matrix):
+    size = len(matrix)
+    total_entries = size * size
+    nonzero_entries = sum(1 for row in matrix for value in row if abs(value) > 1.0e-9)
+    sparsity = 100.0 * (1.0 - nonzero_entries / total_entries)
+    diagonal = [matrix[index][index] for index in range(size)]
+    is_symmetric = all(
+        abs(matrix[row][col] - matrix[col][row]) <= 1.0e-6
+        for row in range(size)
+        for col in range(size)
+    )
+
+    print(f"{name}:")
+    print(f"  Size: {size} x {size}")
+    print(f"  Nonzero entries: {nonzero_entries} / {total_entries}")
+    print(f"  Sparsity: {sparsity:.1f}%")
+    print(f"  Symmetric: {is_symmetric}")
+    print(f"  Diagonal min/max: {min(diagonal):.3e} / {max(diagonal):.3e}")
+
+
+def export_mass_and_stiffness_matrices():
+    mass_labels = ["Story1_X", "Story2_X", "Story3_X"]
+    floor_mass = 25_000.0
+    mass_matrix = [
+        [floor_mass if row == col else 0.0 for col in range(3)]
+        for row in range(3)
+    ]
+
+    stiffness_matrix = get_active_stiffness_matrix()
+    stiffness_labels = [f"eq{i + 1}" for i in range(len(stiffness_matrix))]
+
+    mass_csv = save_matrix_csv(
+        MATRICES_DIR / "rigid_diaphragm_mass_matrix.csv",
+        mass_labels,
+        mass_matrix,
+    )
+    mass_heatmap = save_matrix_heatmap(
+        FIGURES_DIR / "rigid_diaphragm_mass_matrix_heatmap.png",
+        mass_labels,
+        mass_matrix,
+        "Rigid diaphragm mass matrix",
+    )
+    stiffness_csv = save_matrix_csv(
+        MATRICES_DIR / "rigid_diaphragm_stiffness_matrix.csv",
+        stiffness_labels,
+        stiffness_matrix,
+    )
+    stiffness_heatmap = save_matrix_heatmap(
+        FIGURES_DIR / "rigid_diaphragm_stiffness_matrix_heatmap.png",
+        stiffness_labels,
+        stiffness_matrix,
+        "Rigid diaphragm active stiffness matrix",
+    )
+
+    print("\n=== Rigid diaphragm matrix summary ===")
+    print("Independent lateral DOFs: Story1_X, Story2_X, Story3_X")
+    print("Each right-floor x DOF is constrained to the left-floor x DOF by equalDOF.")
+    summarize_matrix("Mass matrix [kg]", mass_matrix)
+    summarize_matrix("Active stiffness matrix", stiffness_matrix)
+    print(f"  Mass CSV: {mass_csv}")
+    print(f"  Mass heatmap: {mass_heatmap}")
+    print(f"  Stiffness CSV: {stiffness_csv}")
+    print(f"  Stiffness heatmap: {stiffness_heatmap}")
+
+
+def get_active_stiffness_matrix():
+    ops.wipeAnalysis()
+    ops.constraints("Transformation")
+    ops.numberer("Plain")
+    ops.system("FullGeneral")
+    ops.algorithm("Linear")
+    ops.integrator("GimmeMCK", 0.0, 0.0, 1.0)
+    ops.analysis("Transient")
+    ops.analyze(1, 0.0)
+
+    values = ops.printA("-ret")
+    size = int(math.sqrt(len(values)))
+    return [
+        values[row * size : (row + 1) * size]
+        for row in range(size)
+    ]
+
+
 def prepare_output_dirs():
     FIGURES_DIR.mkdir(parents=True, exist_ok=True)
     ANIMATIONS_DIR.mkdir(parents=True, exist_ok=True)
+    MATRICES_DIR.mkdir(parents=True, exist_ok=True)
 
 
 def save_model_plot(output_path=FIGURES_DIR / "frame_with_rigid_diaphragm.png"):
@@ -336,6 +446,7 @@ if __name__ == "__main__":
     analysis_result = run_gravity_analysis(nodes)
     periods = get_modal_periods()
     mode_shapes = get_rigid_diaphragm_mode_shapes(nodes)
+    export_mass_and_stiffness_matrices()
     mode_plot_paths = save_mode_shape_plots()
     mode_animation_paths = save_mode_shape_animations(mode_shapes)
 
