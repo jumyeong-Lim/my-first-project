@@ -1,0 +1,119 @@
+{
+  "worst_relative_change": {
+    "mesh_16x16_T1_s": {
+      "max_abs_change_pct": 0.028043169877915088,
+      "signed_change_pct": 0.028043169877915088,
+      "case": "F_X99"
+    },
+    "mesh_16x16_X_roof_joint_max_mm": {
+      "max_abs_change_pct": 0.06481050368625337,
+      "signed_change_pct": 0.06481050368625337,
+      "case": "F_Y99"
+    },
+    "mesh_16x16_Y_roof_joint_max_mm": {
+      "max_abs_change_pct": 0.06940200479582152,
+      "signed_change_pct": 0.06940200479582152,
+      "case": "F_X99"
+    },
+    "section_0.75_T1_s": {
+      "max_abs_change_pct": 15.52783787867985,
+      "signed_change_pct": 15.52783787867985,
+      "case": "R_U"
+    },
+    "section_0.75_X_roof_joint_max_mm": {
+      "max_abs_change_pct": 33.43180838525292,
+      "signed_change_pct": 33.43180838525292,
+      "case": "R_C99"
+    },
+    "section_0.75_Y_roof_joint_max_mm": {
+      "max_abs_change_pct": 33.46582957864223,
+      "signed_change_pct": 33.46582957864223,
+      "case": "F_U"
+    },
+    "section_1.25_T1_s": {
+      "max_abs_change_pct": 10.584103521728016,
+      "signed_change_pct": -10.584103521728016,
+      "case": "R_U"
+    },
+    "section_1.25_X_roof_joint_max_mm": {
+      "max_abs_change_pct": 20.03540797001533,
+      "signed_change_pct": -20.03540797001533,
+      "case": "R_Y99"
+    },
+    "section_1.25_Y_roof_joint_max_mm": {
+      "max_abs_change_pct": 20.047627575168494,
+      "signed_change_pct": -20.047627575168494,
+      "case": "F_U"
+    },
+    "geometry_Linear_T1_s": {
+      "max_abs_change_pct": 0.1496748287503265,
+      "signed_change_pct": -0.1496748287503265,
+      "case": "F_U"
+    },
+    "geometry_Linear_X_roof_joint_max_mm": {
+      "max_abs_change_pct": 0.2208974757406469,
+      "signed_change_pct": -0.2208974757406469,
+      "case": "R_Y99"
+    },
+    "geometry_Linear_Y_roof_joint_max_mm": {
+      "max_abs_change_pct": 0.2968359814267775,
+      "signed_change_pct": -0.2968359814267775,
+      "case": "F_U"
+    }
+  },
+  "F_C99_interaction": {
+    "T1_s": {
+      "minimum_interaction": 0.02573963555046166,
+      "maximum_interaction": 0.026591564895651842,
+      "all_positive": true
+    },
+    "X_roof_joint_max_mm": {
+      "minimum_interaction": 0.6485060188251905,
+      "maximum_interaction": 0.8715785924370398,
+      "all_positive": true
+    },
+    "Y_roof_joint_max_mm": {
+      "minimum_interaction": 1.1575979181085114,
+      "maximum_interaction": 1.530830642017449,
+      "all_positive": true
+    }
+  },
+  "first_3_mode_low_MAC": [
+    {
+      "case": "F_X99",
+      "family": "section",
+      "level": "0.75",
+      "minimum_MAC_first_3": 0.5223550528152283
+    }
+  ],
+  "mode_crossing_check": {
+    "case": "F_X99",
+    "section_factor": 0.75,
+    "mode_group": [
+      3,
+      4
+    ],
+    "reference_periods_s": [
+      0.19141436201373108,
+      0.18704379780939767
+    ],
+    "perturbed_periods_s": [
+      0.21438851905273154,
+      0.2133849452242301
+    ],
+    "individual_MAC_matrix": [
+      [
+        0.47743435022284497,
+        0.5223550528057628
+      ],
+      [
+        0.5224546731868978,
+        0.47749742749970014
+      ]
+    ],
+    "subspace_singular_values": [
+      0.9999767026241212,
+      0.9998940433486918
+    ]
+  }
+}

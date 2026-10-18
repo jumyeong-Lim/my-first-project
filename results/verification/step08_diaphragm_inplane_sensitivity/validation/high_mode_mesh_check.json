@@ -1,0 +1,106 @@
+{
+  "mesh_4_points": 35,
+  "mesh_8_points": 34,
+  "mesh_8_min_adjacent_MAC": 0.9507453583419064,
+  "records": [
+    {
+      "rigid_origin_mode": 1,
+      "mode_4": 1,
+      "mode_8": 1,
+      "period_4_s": 0.3319873945043384,
+      "period_8_s": 0.3319873946018603,
+      "period_difference_pct": 2.9375168963952092e-08,
+      "cross_mesh_MAC": 0.9999999999999791,
+      "origin_MAC_4": 0.9999999617885572,
+      "origin_MAC_8": 0.9999999617868246
+    },
+    {
+      "rigid_origin_mode": 2,
+      "mode_4": 2,
+      "mode_8": 2,
+      "period_4_s": 0.308886088929185,
+      "period_8_s": 0.3089039081916061,
+      "period_difference_pct": 0.005768878256340315,
+      "cross_mesh_MAC": 0.9999996718558359,
+      "origin_MAC_4": 0.995646295150269,
+      "origin_MAC_8": 0.9955711787920258
+    },
+    {
+      "rigid_origin_mode": 3,
+      "mode_4": 3,
+      "mode_8": 3,
+      "period_4_s": 0.2735536644561575,
+      "period_8_s": 0.27355366462757746,
+      "period_difference_pct": 6.266411833877328e-08,
+      "cross_mesh_MAC": 0.9999999999999636,
+      "origin_MAC_4": 0.9999998143995821,
+      "origin_MAC_8": 0.9999998143944564
+    },
+    {
+      "rigid_origin_mode": 4,
+      "mode_4": 8,
+      "mode_8": 8,
+      "period_4_s": 0.1013744539005459,
+      "period_8_s": 0.10137445400308563,
+      "period_difference_pct": 1.0114946658035251e-07,
+      "cross_mesh_MAC": 0.9999999999988702,
+      "origin_MAC_4": 0.9999985910917417,
+      "origin_MAC_8": 0.9999985910108109
+    },
+    {
+      "rigid_origin_mode": 5,
+      "mode_4": 9,
+      "mode_8": 9,
+      "period_4_s": 0.09749498549322234,
+      "period_8_s": 0.0975189392983763,
+      "period_difference_pct": 0.024569268904217623,
+      "cross_mesh_MAC": 0.9999978779478904,
+      "origin_MAC_4": 0.8128347231424584,
+      "origin_MAC_8": 0.811763349663582
+    },
+    {
+      "rigid_origin_mode": 6,
+      "mode_4": 11,
+      "mode_8": 11,
+      "period_4_s": 0.07893684470154372,
+      "period_8_s": 0.07893684486879093,
+      "period_difference_pct": 2.1187471777039946e-07,
+      "cross_mesh_MAC": 0.999999999997806,
+      "origin_MAC_4": 0.9999925058650636,
+      "origin_MAC_8": 0.9999925056220154
+    },
+    {
+      "rigid_origin_mode": 7,
+      "mode_4": 15,
+      "mode_8": 15,
+      "period_4_s": 0.0571979893344517,
+      "period_8_s": 0.05719798935086042,
+      "period_difference_pct": 2.868758564034124e-08,
+      "cross_mesh_MAC": 0.9999999999990528,
+      "origin_MAC_4": 0.9999987357834318,
+      "origin_MAC_8": 0.9999987357140306
+    },
+    {
+      "rigid_origin_mode": 8,
+      "mode_4": 12,
+      "mode_8": 12,
+      "period_4_s": 0.07543090113037916,
+      "period_8_s": 0.07549628811016836,
+      "period_difference_pct": 0.08668460645349096,
+      "cross_mesh_MAC": 0.9999313496738902,
+      "origin_MAC_4": 0.00011596984445352974,
+      "origin_MAC_8": 0.00011281942656587979
+    },
+    {
+      "rigid_origin_mode": 9,
+      "mode_4": 19,
+      "mode_8": 19,
+      "period_4_s": 0.04143247284133878,
+      "period_8_s": 0.041432472864790196,
+      "period_difference_pct": 5.6601523468202686e-08,
+      "cross_mesh_MAC": 0.9999999999980091,
+      "origin_MAC_4": 0.9999926936822557,
+      "origin_MAC_8": 0.9999926934505201
+    }
+  ]
+}
