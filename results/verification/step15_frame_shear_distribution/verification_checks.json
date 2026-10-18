@@ -1,0 +1,13 @@
+{
+  "case_count": 144,
+  "model_mass_combinations": 72,
+  "original_files_checked": 340,
+  "changed": [],
+  "max_force_equilibrium_error_kN": 7.815970093361102e-14,
+  "max_torque_equilibrium_error_kNm": 3.410605131648481e-13,
+  "max_base_cut_reaction_error_kN": 0.0,
+  "max_roof_reproduction_error_mm": 0.0,
+  "mesh12_max_share_change_percentage_points": 0.028583340508042454,
+  "max_uniform_mirror_share_error_percentage_points": 8.526512829121202e-14,
+  "max_rigid_same_center_inertia_control_difference_kN": 1.9539925233402755e-14
+}

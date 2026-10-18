@@ -1,0 +1,202 @@
+{
+  "mesh_checks": [
+    {
+      "diaphragm": "S",
+      "mass_case": "C99",
+      "first_period_4_to_8_pct": 0.011486565600615783,
+      "static": {
+        "X": {
+          "max_floor_peak_8_to_16_pct": 0.021419949621459544,
+          "max_floor_RMS_8_to_16_pct": 0.7066060530869556,
+          "floors_16": [
+            {
+              "floor": 1,
+              "max_directional_mm": 1.2933352962037032,
+              "inplane_RMS_mm": 0.003239175218736941
+            },
+            {
+              "floor": 2,
+              "max_directional_mm": 2.8864766954628873,
+              "inplane_RMS_mm": 0.0034641880222758175
+            },
+            {
+              "floor": 3,
+              "max_directional_mm": 3.8765113961897266,
+              "inplane_RMS_mm": 0.00349966139616544
+            }
+          ]
+        },
+        "Y": {
+          "max_floor_peak_8_to_16_pct": 0.011356825566766204,
+          "max_floor_RMS_8_to_16_pct": 0.805754762397215,
+          "floors_16": [
+            {
+              "floor": 1,
+              "max_directional_mm": 2.407905500758362,
+              "inplane_RMS_mm": 0.002830408657461975
+            },
+            {
+              "floor": 2,
+              "max_directional_mm": 5.196438641979262,
+              "inplane_RMS_mm": 0.0027396982449551252
+            },
+            {
+              "floor": 3,
+              "max_directional_mm": 6.8400470841884475,
+              "inplane_RMS_mm": 0.0026740161539204332
+            }
+          ]
+        }
+      }
+    },
+    {
+      "diaphragm": "S",
+      "mass_case": "C50_Jlo",
+      "first_period_4_to_8_pct": 0.0024108232598463175,
+      "static": {
+        "X": {
+          "max_floor_peak_8_to_16_pct": 0.006470129730518082,
+          "max_floor_RMS_8_to_16_pct": 0.44818581434888927,
+          "floors_16": [
+            {
+              "floor": 1,
+              "max_directional_mm": 1.0210570444485279,
+              "inplane_RMS_mm": 0.0012870006122950284
+            },
+            {
+              "floor": 2,
+              "max_directional_mm": 2.3042533512647547,
+              "inplane_RMS_mm": 0.0013230971110809828
+            },
+            {
+              "floor": 3,
+              "max_directional_mm": 3.1084991564166753,
+              "inplane_RMS_mm": 0.001323688339619688
+            }
+          ]
+        },
+        "Y": {
+          "max_floor_peak_8_to_16_pct": 0.0027296467669080116,
+          "max_floor_RMS_8_to_16_pct": 0.4116387862813209,
+          "floors_16": [
+            {
+              "floor": 1,
+              "max_directional_mm": 1.813955757777716,
+              "inplane_RMS_mm": 0.0016192574694084937
+            },
+            {
+              "floor": 2,
+              "max_directional_mm": 3.908728810214231,
+              "inplane_RMS_mm": 0.0014908000354722647
+            },
+            {
+              "floor": 3,
+              "max_directional_mm": 5.135969827097697,
+              "inplane_RMS_mm": 0.0014154494897171612
+            }
+          ]
+        }
+      }
+    },
+    {
+      "diaphragm": "F",
+      "mass_case": "C99",
+      "first_period_4_to_8_pct": 0.03112517226033784,
+      "static": {
+        "X": {
+          "max_floor_peak_8_to_16_pct": 0.06405247635461464,
+          "max_floor_RMS_8_to_16_pct": 0.1802787813968365,
+          "floors_16": [
+            {
+              "floor": 1,
+              "max_directional_mm": 1.5857584798825184,
+              "inplane_RMS_mm": 0.1935489243519578
+            },
+            {
+              "floor": 2,
+              "max_directional_mm": 3.4628022992375573,
+              "inplane_RMS_mm": 0.3983035301828567
+            },
+            {
+              "floor": 3,
+              "max_directional_mm": 4.6001012398827035,
+              "inplane_RMS_mm": 0.5070318961283669
+            }
+          ]
+        },
+        "Y": {
+          "max_floor_peak_8_to_16_pct": 0.06935841648867402,
+          "max_floor_RMS_8_to_16_pct": 0.13436078123887363,
+          "floors_16": [
+            {
+              "floor": 1,
+              "max_directional_mm": 3.0877912354913537,
+              "inplane_RMS_mm": 0.31743999829074665
+            },
+            {
+              "floor": 2,
+              "max_directional_mm": 6.346224152248328,
+              "inplane_RMS_mm": 0.5587180581155788
+            },
+            {
+              "floor": 3,
+              "max_directional_mm": 8.143773628230315,
+              "inplane_RMS_mm": 0.6456415811749895
+            }
+          ]
+        }
+      }
+    },
+    {
+      "diaphragm": "F",
+      "mass_case": "C50_Jlo",
+      "first_period_4_to_8_pct": 0.02635560851600438,
+      "static": {
+        "X": {
+          "max_floor_peak_8_to_16_pct": 0.024989124549334996,
+          "max_floor_RMS_8_to_16_pct": 0.18404602641195478,
+          "floors_16": [
+            {
+              "floor": 1,
+              "max_directional_mm": 1.083742550157478,
+              "inplane_RMS_mm": 0.09726674169446343
+            },
+            {
+              "floor": 2,
+              "max_directional_mm": 2.444430763908611,
+              "inplane_RMS_mm": 0.19998218518493746
+            },
+            {
+              "floor": 3,
+              "max_directional_mm": 3.298810625474281,
+              "inplane_RMS_mm": 0.2547215255794982
+            }
+          ]
+        },
+        "Y": {
+          "max_floor_peak_8_to_16_pct": 0.05804550722270374,
+          "max_floor_RMS_8_to_16_pct": 0.09991202776407082,
+          "floors_16": [
+            {
+              "floor": 1,
+              "max_directional_mm": 1.9114823826723308,
+              "inplane_RMS_mm": 0.23472309125927654
+            },
+            {
+              "floor": 2,
+              "max_directional_mm": 3.92374186910172,
+              "inplane_RMS_mm": 0.4061835202698921
+            },
+            {
+              "floor": 3,
+              "max_directional_mm": 5.134434348076772,
+              "inplane_RMS_mm": 0.46676819049712104
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "half_load_relative_scale_error": 3.9279198565169205e-05,
+  "same_center_rigid_static_max_difference_mm": 1.7763568394002505e-15
+}

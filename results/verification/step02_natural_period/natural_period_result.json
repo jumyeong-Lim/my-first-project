@@ -1,0 +1,42 @@
+{
+  "units": {
+    "force": "kN",
+    "length": "m",
+    "time": "s"
+  },
+  "frame": {
+    "elastic_modulus": 200000000.0,
+    "bay_width": 6.0,
+    "story_height": 4.0,
+    "beam_area": 0.01,
+    "beam_second_moment_of_area": 0.0002,
+    "column_area": 0.02,
+    "column_second_moment_of_area": 0.0004
+  },
+  "dynamic_parameters": {
+    "floor_weight": 200.0,
+    "gravity": 9.80665,
+    "beam_inertia_factor": 1.0,
+    "axial_area_factor": 1.0
+  },
+  "result": {
+    "floor_weight": 200.0,
+    "gravity": 9.80665,
+    "floor_mass": 20.394324259558566,
+    "static_stiffness": 14977.843426883288,
+    "textbook_bending_stiffness": 15000.0,
+    "sdof_angular_frequency": 27.100043195744632,
+    "sdof_period": 0.23185148679638265,
+    "opensees_eigenvalue": 734.4123412112261,
+    "opensees_angular_frequency": 27.100043195744654,
+    "opensees_period": 0.23185148679638248,
+    "period_error_percent": -7.182764104507426e-14,
+    "textbook_period": 0.23168018903616983,
+    "textbook_period_difference_percent": 0.07393716352066451,
+    "total_free_mass_x": 20.394324259558566,
+    "mass_error_percent": 0.0,
+    "left_mode_component": -0.22143452756966334,
+    "right_mode_component": -0.22143452756966334,
+    "mode_shape_difference": 0.0
+  }
+}

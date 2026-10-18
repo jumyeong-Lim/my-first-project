@@ -1,0 +1,239 @@
+{
+  "diagnostics": [
+    {
+      "case": "S_U",
+      "variant": "baseline",
+      "mesh": 8,
+      "T1_s": 0.33198109826920474,
+      "roof_X_joint_max_mm": 2.341145805993011,
+      "roof_X_inplane_RMS_mm": 0.00011596522182273331,
+      "roof_Y_joint_max_mm": 3.417340676765071,
+      "roof_Y_inplane_RMS_mm": 6.824535988244846e-05,
+      "T1_s_change_pct": 0.0,
+      "roof_X_joint_max_mm_change_pct": 0.0,
+      "roof_Y_joint_max_mm_change_pct": 0.0
+    },
+    {
+      "case": "S_U",
+      "variant": "released_drill",
+      "mesh": 8,
+      "T1_s": 0.3319811188467698,
+      "roof_X_joint_max_mm": 2.341148142531614,
+      "roof_X_inplane_RMS_mm": 0.0001158003562162412,
+      "roof_Y_joint_max_mm": 3.417342015849776,
+      "roof_Y_inplane_RMS_mm": 6.818247948485395e-05,
+      "T1_s_change_pct": 6.198414648217465e-06,
+      "roof_X_joint_max_mm_change_pct": 9.980320734293002e-05,
+      "roof_Y_joint_max_mm_change_pct": 3.918499300592515e-05
+    },
+    {
+      "case": "S_U",
+      "variant": "full_plate",
+      "mesh": 8,
+      "T1_s": 0.3216448658272225,
+      "roof_X_joint_max_mm": 2.196657728095901,
+      "roof_X_inplane_RMS_mm": 0.00012253004419297554,
+      "roof_Y_joint_max_mm": 3.202087582813206,
+      "roof_Y_inplane_RMS_mm": 0.00010752005295380376,
+      "T1_s_change_pct": -3.11350028536882,
+      "roof_X_joint_max_mm_change_pct": -6.171682153552349,
+      "roof_Y_joint_max_mm_change_pct": -6.298847973086152
+    },
+    {
+      "case": "F_U",
+      "variant": "baseline",
+      "mesh": 8,
+      "T1_s": 0.331987394601932,
+      "roof_X_joint_max_mm": 2.3418784140660014,
+      "roof_X_inplane_RMS_mm": 0.0006198475545137564,
+      "roof_Y_joint_max_mm": 3.4176470564784727,
+      "roof_Y_inplane_RMS_mm": 0.00034136610339768707,
+      "T1_s_change_pct": 0.0,
+      "roof_X_joint_max_mm_change_pct": 0.0,
+      "roof_Y_joint_max_mm_change_pct": 0.0
+    },
+    {
+      "case": "F_U",
+      "variant": "released_drill",
+      "mesh": 8,
+      "T1_s": 0.3319873946123236,
+      "roof_X_joint_max_mm": 2.341878422917851,
+      "roof_X_inplane_RMS_mm": 0.0006195479881461252,
+      "roof_Y_joint_max_mm": 3.417647078513787,
+      "roof_Y_inplane_RMS_mm": 0.00034125882182954543,
+      "T1_s_change_pct": 3.1301183867071813e-09,
+      "roof_X_joint_max_mm_change_pct": 3.7798073559969225e-07,
+      "roof_Y_joint_max_mm_change_pct": 6.447510303431159e-07
+    },
+    {
+      "case": "F_U",
+      "variant": "full_plate",
+      "mesh": 8,
+      "T1_s": 0.3319607077944192,
+      "roof_X_joint_max_mm": 2.341505597952647,
+      "roof_X_inplane_RMS_mm": 0.0006198311474375036,
+      "roof_Y_joint_max_mm": 3.417119715268813,
+      "roof_Y_inplane_RMS_mm": 0.00034267714928674984,
+      "T1_s_change_pct": -0.008038500240281632,
+      "roof_X_joint_max_mm_change_pct": -0.015919533273589526,
+      "roof_Y_joint_max_mm_change_pct": -0.015429949346579264
+    },
+    {
+      "case": "F_U",
+      "variant": "no_shell",
+      "mesh": 1,
+      "T1_s": 0.3319874462223625,
+      "roof_X_joint_max_mm": 2.341875846402057,
+      "roof_X_inplane_RMS_mm": null,
+      "roof_Y_joint_max_mm": 3.4176386414143134,
+      "roof_Y_inplane_RMS_mm": null,
+      "T1_s_change_pct": 1.5548912801754966e-05,
+      "roof_X_joint_max_mm_change_pct": -0.00010964121489598355,
+      "roof_Y_joint_max_mm_change_pct": -0.00024622390843997977
+    },
+    {
+      "case": "F_U",
+      "variant": "no_shell",
+      "mesh": 8,
+      "T1_s": 0.3319874462223938,
+      "roof_X_joint_max_mm": 2.3418758464020564,
+      "roof_X_inplane_RMS_mm": null,
+      "roof_Y_joint_max_mm": 3.4176386414143134,
+      "roof_Y_inplane_RMS_mm": null,
+      "T1_s_change_pct": 1.5548922238650675e-05,
+      "roof_X_joint_max_mm_change_pct": -0.00010964121491818801,
+      "roof_Y_joint_max_mm_change_pct": -0.00024622390843997977
+    },
+    {
+      "case": "S_C99",
+      "variant": "baseline",
+      "mesh": 8,
+      "T1_s": 0.5096358780113316,
+      "roof_X_joint_max_mm": 3.876186371526919,
+      "roof_X_inplane_RMS_mm": 0.003523146472881253,
+      "roof_Y_joint_max_mm": 6.839740020076988,
+      "roof_Y_inplane_RMS_mm": 0.002695737184667605,
+      "T1_s_change_pct": 0.0,
+      "roof_X_joint_max_mm_change_pct": 0.0,
+      "roof_Y_joint_max_mm_change_pct": 0.0
+    },
+    {
+      "case": "S_C99",
+      "variant": "released_drill",
+      "mesh": 8,
+      "T1_s": 0.5096379574295127,
+      "roof_X_joint_max_mm": 3.8762752239951848,
+      "roof_X_inplane_RMS_mm": 0.003528478248673647,
+      "roof_Y_joint_max_mm": 6.839836005811824,
+      "roof_Y_inplane_RMS_mm": 0.0027056854357942277,
+      "T1_s_change_pct": 0.0004080203672485183,
+      "roof_X_joint_max_mm_change_pct": 0.002292265122183501,
+      "roof_Y_joint_max_mm_change_pct": 0.0014033535566282396
+    },
+    {
+      "case": "S_C99",
+      "variant": "full_plate",
+      "mesh": 8,
+      "T1_s": 0.497183277954314,
+      "roof_X_joint_max_mm": 3.6689805297383375,
+      "roof_X_inplane_RMS_mm": 0.0035290788729574296,
+      "roof_Y_joint_max_mm": 6.483386849198405,
+      "roof_Y_inplane_RMS_mm": 0.0027415656354020305,
+      "T1_s_change_pct": -2.443430808994318,
+      "roof_X_joint_max_mm_change_pct": -5.345610915683563,
+      "roof_Y_joint_max_mm_change_pct": -5.2100397066637605
+    },
+    {
+      "case": "F_C99",
+      "variant": "baseline",
+      "mesh": 8,
+      "T1_s": 0.5349164751199519,
+      "roof_X_joint_max_mm": 4.597156647208266,
+      "roof_X_inplane_RMS_mm": 0.506119470115231,
+      "roof_Y_joint_max_mm": 8.138149032673127,
+      "roof_Y_inplane_RMS_mm": 0.6447752561036536,
+      "T1_s_change_pct": 0.0,
+      "roof_X_joint_max_mm_change_pct": 0.0,
+      "roof_Y_joint_max_mm_change_pct": 0.0
+    },
+    {
+      "case": "F_C99",
+      "variant": "released_drill",
+      "mesh": 8,
+      "T1_s": 0.5351662111206433,
+      "roof_X_joint_max_mm": 4.604055914808402,
+      "roof_X_inplane_RMS_mm": 0.5104722235592002,
+      "roof_Y_joint_max_mm": 8.151379044833586,
+      "roof_Y_inplane_RMS_mm": 0.6504392700846512,
+      "T1_s_change_pct": 0.046686915117999384,
+      "roof_X_joint_max_mm_change_pct": 0.1500768437883604,
+      "roof_Y_joint_max_mm_change_pct": 0.16256782847479112
+    },
+    {
+      "case": "F_C99",
+      "variant": "full_plate",
+      "mesh": 8,
+      "T1_s": 0.5348897269183785,
+      "roof_X_joint_max_mm": 4.596650066474767,
+      "roof_X_inplane_RMS_mm": 0.5061136753474134,
+      "roof_Y_joint_max_mm": 8.137313215440452,
+      "roof_Y_inplane_RMS_mm": 0.6447708005295626,
+      "T1_s_change_pct": -0.005000444521241487,
+      "roof_X_joint_max_mm_change_pct": -0.011019435976933334,
+      "roof_Y_joint_max_mm_change_pct": -0.010270360364739162
+    },
+    {
+      "case": "F_C99",
+      "variant": "no_shell",
+      "mesh": 1,
+      "T1_s": 0.5562772637280095,
+      "roof_X_joint_max_mm": 5.144047860005407,
+      "roof_X_inplane_RMS_mm": null,
+      "roof_Y_joint_max_mm": 9.19413143217323,
+      "roof_Y_inplane_RMS_mm": null,
+      "T1_s_change_pct": 3.9932942060286303,
+      "roof_X_joint_max_mm_change_pct": 11.896292747153915,
+      "roof_Y_joint_max_mm_change_pct": 12.975707316989805
+    },
+    {
+      "case": "F_C99",
+      "variant": "no_shell",
+      "mesh": 8,
+      "T1_s": 0.556277263728047,
+      "roof_X_joint_max_mm": 5.144047860005407,
+      "roof_X_inplane_RMS_mm": null,
+      "roof_Y_joint_max_mm": 9.19413143217323,
+      "roof_Y_inplane_RMS_mm": null,
+      "T1_s_change_pct": 3.993294206035647,
+      "roof_X_joint_max_mm_change_pct": 11.896292747153915,
+      "roof_Y_joint_max_mm_change_pct": 12.975707316989805
+    }
+  ],
+  "vertical_probes": [
+    {
+      "variant": "baseline",
+      "node": 42,
+      "vertical_probe_force_kN": -0.001,
+      "vertical_compliance_m_per_kN": 2.9014482525824368e-06
+    },
+    {
+      "variant": "released_drill",
+      "node": 42,
+      "vertical_probe_force_kN": -0.001,
+      "vertical_compliance_m_per_kN": 2.9014486128899238e-06
+    },
+    {
+      "variant": "full_plate",
+      "node": 42,
+      "vertical_probe_force_kN": -0.001,
+      "vertical_compliance_m_per_kN": 2.8686893136832276e-06
+    },
+    {
+      "variant": "no_shell",
+      "node": 42,
+      "vertical_probe_force_kN": -0.001,
+      "vertical_compliance_m_per_kN": 2.901858462127805e-06
+    }
+  ],
+  "scope": "공유 드릴링, 면외 판강성, 셸 없는 보 격자의 별도 진단. 원본 36조합은 변경하지 않음."
+}

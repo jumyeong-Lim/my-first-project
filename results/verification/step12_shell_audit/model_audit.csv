@@ -1,0 +1,4 @@
+﻿case,nodes,frame_elements,shell_elements,shell_bad_normals,shell_beam_shared_nodes,mass_X,mass_Y,mass_Z,explicit_rotation_mass,gravity_reaction_kN,max_shell_gravity_outplane_force
+R,51,87,0,0,0,61.18297277867574,61.18297277867574,0.0,0.0,599.9999999999999,0.0
+S,1287,444,1152,0,393,61.18297277867574,61.18297277867574,0.0,0.0,600.0,0.0
+F,1287,444,1152,0,393,61.18297277867574,61.18297277867574,0.0,0.0,600.0,0.0

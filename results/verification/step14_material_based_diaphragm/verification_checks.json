@@ -1,0 +1,11 @@
+{
+  "original_files_checked": 267,
+  "changed": [],
+  "max_panel_axial_error_pct": 2.886579864025407e-13,
+  "max_panel_A_scaled_error": 1.9868214925130209e-16,
+  "max_baseline_reproduction_error_pct": 7.671641100159832e-11,
+  "physical_case_count": 36,
+  "baseline_case_count": 36,
+  "min_physical_matched_MAC": 0.7360285987741724,
+  "mesh12_max_change_pct": 0.7566213031468427
+}

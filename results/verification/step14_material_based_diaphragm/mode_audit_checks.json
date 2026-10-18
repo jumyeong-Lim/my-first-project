@@ -1,0 +1,5 @@
+{
+  "minimum_cluster_cosine_squared": 0.9991764666748986,
+  "minimum_mesh_MAC": 0.9993649940709531,
+  "maximum_higher_mode_mesh_period_change_pct": 0.2320666951501016
+}

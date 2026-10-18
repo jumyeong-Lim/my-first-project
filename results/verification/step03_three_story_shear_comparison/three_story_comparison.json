@@ -1,0 +1,528 @@
+{
+  "units": {
+    "force": "kN",
+    "length": "m",
+    "time": "s"
+  },
+  "assumed_frame": {
+    "elastic_modulus": 200000000.0,
+    "bay_width": 6.0,
+    "story_height": 4.0,
+    "beam": {
+      "area": 0.01,
+      "second_moment_of_area": 0.0002
+    },
+    "column": {
+      "area": 0.02,
+      "second_moment_of_area": 0.0004
+    }
+  },
+  "value_classification": {
+    "assumed_inputs": [
+      "elastic_modulus",
+      "bay_width",
+      "story_height",
+      "beam area and second moment of area",
+      "column area and second moment of area",
+      "floor weights",
+      "gravity",
+      "beam inertia factor",
+      "axial area factor"
+    ],
+    "derived_values": [
+      "floor masses = floor weights / gravity",
+      "story stiffness from Step 01 static analysis",
+      "eigenvalues, periods, mode shapes, and MAC"
+    ]
+  },
+  "cases": {
+    "flexible_beam": {
+      "assumed_inputs": {
+        "floor_weights": [
+          200.0,
+          200.0,
+          200.0
+        ],
+        "gravity": 9.80665,
+        "beam_inertia_factor": 0.25,
+        "axial_area_factor": 1.0
+      },
+      "result": {
+        "story_stiffness": 9997.533300443985,
+        "floor_masses": [
+          20.394324259558566,
+          20.394324259558566,
+          20.394324259558566
+        ],
+        "shear_stiffness_matrix": [
+          [
+            19995.06660088797,
+            -9997.533300443985,
+            0.0
+          ],
+          [
+            -9997.533300443985,
+            19995.06660088797,
+            -9997.533300443985
+          ],
+          [
+            0.0,
+            -9997.533300443985,
+            9997.533300443985
+          ]
+        ],
+        "mass_matrix": [
+          [
+            20.394324259558566,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            20.394324259558566,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            20.394324259558566
+          ]
+        ],
+        "shear_mode_shapes": [
+          [
+            0.44504186791262895,
+            0.8019377358048385,
+            1.0
+          ],
+          [
+            -1.2469796037174665,
+            -0.5549581320873704,
+            1.0
+          ],
+          [
+            1.8019377358048365,
+            -2.246979603717465,
+            1.0
+          ]
+        ],
+        "frame_mode_shapes": [
+          [
+            0.2025239449247301,
+            0.6021123869155893,
+            1.0
+          ],
+          [
+            -1.1835142087295596,
+            -1.2627377381628813,
+            1.0
+          ],
+          [
+            4.081760796440158,
+            -3.033743099177153,
+            1.0
+          ]
+        ],
+        "modes": [
+          {
+            "mode": 1,
+            "shear_eigenvalue": 97.09240946899222,
+            "frame_eigenvalue": 30.430375722628774,
+            "shear_period": 0.63765714296421,
+            "frame_period": 1.1390065224700539,
+            "period_difference_percent": 78.6236592873834,
+            "mass_weighted_mac": 0.9574771370284372
+          },
+          {
+            "mode": 2,
+            "shear_eigenvalue": 762.2584356553797,
+            "frame_eigenvalue": 602.2295177086916,
+            "shear_period": 0.2275771994558783,
+            "frame_period": 0.25603471218016177,
+            "period_difference_percent": 12.504553528351467,
+            "mass_weighted_mac": 0.8822044543048064
+          },
+          {
+            "mode": 3,
+            "shear_eigenvalue": 1591.706903395603,
+            "frame_eigenvalue": 3405.322384881783,
+            "shear_period": 0.15748830847691278,
+            "frame_period": 0.10767149711751396,
+            "period_difference_percent": -31.63206960642528,
+            "mass_weighted_mac": 0.9217400119880094
+          }
+        ],
+        "total_input_mass": 61.1829727786757,
+        "total_free_mass_x": 61.182972778675705,
+        "mass_error_percent": 1.161340653273631e-14,
+        "maximum_tied_dof_difference": 0.0,
+        "maximum_shear_eigen_residual": 1.7342979411182685e-15
+      }
+    },
+    "reference": {
+      "assumed_inputs": {
+        "floor_weights": [
+          200.0,
+          200.0,
+          200.0
+        ],
+        "gravity": 9.80665,
+        "beam_inertia_factor": 1.0,
+        "axial_area_factor": 1.0
+      },
+      "result": {
+        "story_stiffness": 14977.843426883288,
+        "floor_masses": [
+          20.394324259558566,
+          20.394324259558566,
+          20.394324259558566
+        ],
+        "shear_stiffness_matrix": [
+          [
+            29955.686853766576,
+            -14977.843426883288,
+            0.0
+          ],
+          [
+            -14977.843426883288,
+            29955.686853766576,
+            -14977.843426883288
+          ],
+          [
+            0.0,
+            -14977.843426883288,
+            14977.843426883288
+          ]
+        ],
+        "mass_matrix": [
+          [
+            20.394324259558566,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            20.394324259558566,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            20.394324259558566
+          ]
+        ],
+        "shear_mode_shapes": [
+          [
+            0.4450418679126288,
+            0.8019377358048384,
+            1.0
+          ],
+          [
+            -1.246979603717467,
+            -0.5549581320873712,
+            1.0
+          ],
+          [
+            1.801937735804838,
+            -2.246979603717466,
+            1.0
+          ]
+        ],
+        "frame_mode_shapes": [
+          [
+            0.2638042449466354,
+            0.6812289349894538,
+            1.0
+          ],
+          [
+            -1.1564128929980333,
+            -1.0201172237741982,
+            1.0
+          ],
+          [
+            3.280205067898473,
+            -2.738186717268453,
+            1.0
+          ]
+        ],
+        "modes": [
+          {
+            "mode": 1,
+            "shear_eigenvalue": 145.45937115316482,
+            "frame_eigenvalue": 69.7874201892926,
+            "shear_period": 0.5209655619230417,
+            "frame_period": 0.7521272024850046,
+            "period_difference_percent": 44.3717699320998,
+            "mass_weighted_mac": 0.980234655345821
+          },
+          {
+            "mode": 2,
+            "shear_eigenvalue": 1141.9804422717193,
+            "frame_eigenvalue": 922.3258544965539,
+            "shear_period": 0.18593045636447647,
+            "frame_period": 0.20688913170423243,
+            "period_difference_percent": 11.272319634751502,
+            "mass_weighted_mac": 0.9356972250581187
+          },
+          {
+            "mode": 3,
+            "shear_eigenvalue": 2384.6218926312404,
+            "frame_eigenvalue": 3721.4935578928034,
+            "shear_period": 0.12866786803420033,
+            "frame_period": 0.10299620727901863,
+            "period_difference_percent": -19.9518816526579,
+            "mass_weighted_mac": 0.9532823898797039
+          }
+        ],
+        "total_input_mass": 61.1829727786757,
+        "total_free_mass_x": 61.182972778675705,
+        "mass_error_percent": 1.161340653273631e-14,
+        "maximum_tied_dof_difference": 0.0,
+        "maximum_shear_eigen_residual": 1.1423634263940206e-15
+      }
+    },
+    "stiff_beam": {
+      "assumed_inputs": {
+        "floor_weights": [
+          200.0,
+          200.0,
+          200.0
+        ],
+        "gravity": 9.80665,
+        "beam_inertia_factor": 4.0,
+        "axial_area_factor": 1.0
+      },
+      "result": {
+        "story_stiffness": 22411.63475699556,
+        "floor_masses": [
+          20.394324259558566,
+          20.394324259558566,
+          20.394324259558566
+        ],
+        "shear_stiffness_matrix": [
+          [
+            44823.26951399112,
+            -22411.63475699556,
+            0.0
+          ],
+          [
+            -22411.63475699556,
+            44823.26951399112,
+            -22411.63475699556
+          ],
+          [
+            0.0,
+            -22411.63475699556,
+            22411.63475699556
+          ]
+        ],
+        "mass_matrix": [
+          [
+            20.394324259558566,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            20.394324259558566,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            20.394324259558566
+          ]
+        ],
+        "shear_mode_shapes": [
+          [
+            0.44504186791262884,
+            0.8019377358048385,
+            1.0
+          ],
+          [
+            -1.246979603717467,
+            -0.554958132087371,
+            1.0
+          ],
+          [
+            1.8019377358048378,
+            -2.246979603717466,
+            1.0
+          ]
+        ],
+        "frame_mode_shapes": [
+          [
+            0.3351576274641691,
+            0.7426972514895565,
+            1.0
+          ],
+          [
+            -1.203017924687273,
+            -0.8035567189295507,
+            1.0
+          ],
+          [
+            2.4773361195033172,
+            -2.4643932538772337,
+            1.0
+          ]
+        ],
+        "modes": [
+          {
+            "mode": 1,
+            "shear_eigenvalue": 217.65365048587313,
+            "frame_eigenvalue": 146.36839030577488,
+            "shear_period": 0.42588945842209763,
+            "frame_period": 0.5193453171545096,
+            "period_difference_percent": 21.94368911563624,
+            "mass_weighted_mac": 0.9936682523531124
+          },
+          {
+            "mode": 2,
+            "shear_eigenvalue": 1708.767266580498,
+            "frame_eigenvalue": 1472.17585020513,
+            "shear_period": 0.15199818788969754,
+            "frame_period": 0.1637570566425883,
+            "period_difference_percent": 7.736190092887137,
+            "mass_weighted_mac": 0.9801745138134886
+          },
+          {
+            "mode": 3,
+            "shear_eigenvalue": 3568.155532675891,
+            "frame_eigenvalue": 4205.777687111364,
+            "shear_period": 0.10518600966853633,
+            "frame_period": 0.09688503757896447,
+            "period_difference_percent": -7.891707381742125,
+            "mass_weighted_mac": 0.9855789212023397
+          }
+        ],
+        "total_input_mass": 61.1829727786757,
+        "total_free_mass_x": 61.182972778675705,
+        "mass_error_percent": 1.161340653273631e-14,
+        "maximum_tied_dof_difference": 0.0,
+        "maximum_shear_eigen_residual": 1.9993315501315065e-15
+      }
+    },
+    "axially_rigid_reference": {
+      "assumed_inputs": {
+        "floor_weights": [
+          200.0,
+          200.0,
+          200.0
+        ],
+        "gravity": 9.80665,
+        "beam_inertia_factor": 1.0,
+        "axial_area_factor": 1000000.0
+      },
+      "result": {
+        "story_stiffness": 14999.999981391027,
+        "floor_masses": [
+          20.394324259558566,
+          20.394324259558566,
+          20.394324259558566
+        ],
+        "shear_stiffness_matrix": [
+          [
+            29999.999962782054,
+            -14999.999981391027,
+            0.0
+          ],
+          [
+            -14999.999981391027,
+            29999.999962782054,
+            -14999.999981391027
+          ],
+          [
+            0.0,
+            -14999.999981391027,
+            14999.999981391027
+          ]
+        ],
+        "mass_matrix": [
+          [
+            20.394324259558566,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            20.394324259558566,
+            0.0
+          ],
+          [
+            0.0,
+            0.0,
+            20.394324259558566
+          ]
+        ],
+        "shear_mode_shapes": [
+          [
+            0.44504186791262873,
+            0.8019377358048383,
+            1.0
+          ],
+          [
+            -1.2469796037174663,
+            -0.5549581320873713,
+            1.0
+          ],
+          [
+            1.801937735804839,
+            -2.246979603717467,
+            1.0
+          ]
+        ],
+        "frame_mode_shapes": [
+          [
+            0.26552336430525214,
+            0.6836326924128048,
+            1.0
+          ],
+          [
+            -1.1537450314717035,
+            -1.0146585226111995,
+            1.0
+          ],
+          [
+            3.2702067444840974,
+            -2.732924152844624,
+            1.0
+          ]
+        ],
+        "modes": [
+          {
+            "mode": 1,
+            "shear_eigenvalue": 145.67454755698762,
+            "frame_eigenvalue": 70.56154989692153,
+            "shear_period": 0.5205806596725965,
+            "frame_period": 0.7479900358526737,
+            "period_difference_percent": 43.68379269469969,
+            "mass_weighted_mac": 0.9807304160434162
+          },
+          {
+            "mode": 2,
+            "shear_eigenvalue": 1143.6697610337615,
+            "frame_eigenvalue": 926.820674480827,
+            "shear_period": 0.18579308634175026,
+            "frame_period": 0.20638684488341452,
+            "period_difference_percent": 11.084243739717971,
+            "mass_weighted_mac": 0.9365354482123581
+          },
+          {
+            "mode": 3,
+            "shear_eigenvalue": 2388.1494368469585,
+            "frame_eigenvalue": 3722.9828807051076,
+            "shear_period": 0.12857280502891547,
+            "frame_period": 0.10297560418334749,
+            "period_difference_percent": -19.908720852602755,
+            "mass_weighted_mac": 0.9536009921979542
+          }
+        ],
+        "total_input_mass": 61.1829727786757,
+        "total_free_mass_x": 61.182972778675705,
+        "mass_error_percent": 1.161340653273631e-14,
+        "maximum_tied_dof_difference": 0.0,
+        "maximum_shear_eigen_residual": 8.212371641671314e-16
+      }
+    }
+  }
+}
