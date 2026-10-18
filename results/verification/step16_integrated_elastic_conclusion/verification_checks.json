@@ -1,0 +1,18 @@
+{
+  "case_count": 72,
+  "directional_case_count": 144,
+  "max_shared_displacement_difference_mm": 0.0,
+  "max_physical_energy_recalculation_error": 1.2212453270876722e-14,
+  "max_mass_orthogonality_error": 9.51184485579672e-13,
+  "source_files_checked": 8,
+  "existing_files_checked": 507,
+  "changed": [],
+  "modal_same_mass_matches": 648,
+  "modal_cross_mass_matches": 648,
+  "common_position_records": 5184,
+  "line_records": 1512,
+  "floor_records": 432,
+  "new_OpenSees_analyses": 0,
+  "low_MAC_actual_mass_count": 60,
+  "low_MAC_fixed_weight_count": 426
+}

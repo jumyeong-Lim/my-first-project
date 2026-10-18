@@ -1,0 +1,32 @@
+{
+  "retrieved_utc": "2026-10-17T10:13:10.958294+00:00",
+  "sources": [
+    {
+      "url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.5.0/SRC/material/section/ElasticMembranePlateSection.cpp",
+      "file": "ElasticMembranePlateSection_v3.5.0.cpp",
+      "sha256": "2e3c524603bab66fed5441df5fd76b6dd40d1e0547723f001f1bfae7b8b1b80f"
+    },
+    {
+      "url": "https://raw.githubusercontent.com/OpenSees/OpenSees/v3.5.0/SRC/element/shell/ShellMITC4.cpp",
+      "file": "ShellMITC4_v3.5.0.cpp",
+      "sha256": "73064c0658e9d41ea3c8547af63e8d713e506779b3e4ed6caccf33a839986e94"
+    },
+    {
+      "url": "https://openseespydoc.readthedocs.io/en/latest/src/elasticMembranePlateSection.html",
+      "file": "section_documentation.html",
+      "sha256": "a65818c63421186ddc44010795f6eb939336a5250ca6d2c4186c05a890c68838"
+    },
+    {
+      "url": "https://openseespydoc.readthedocs.io/en/latest/src/ShellMITC4.html",
+      "file": "shell_documentation.html",
+      "sha256": "dd37c7590ac12b1ec1e5b2daa8f9e3c70c99ec8b6178ab9a4083f49cf5c94d41"
+    }
+  ],
+  "version_limit": "공개 v3.5.0 소스는 구현 원리의 보조 근거. 설치 3.5.1 바이너리의 정확한 빌드 커밋은 확인되지 않음.",
+  "paper": {
+    "path": "reference/3_바닥판 면내강성과 다이어프램 조건 설정에 중요한 논문.pdf",
+    "sha256": "9789fbb2dd23cb5ae98fdc3f04bfcdcf13b63c1c19b678728adb2e4f590030bc",
+    "doi": "10.1016/j.engstruct.2015.03.025",
+    "read_pages": "Appendix A: PDF 13~14쪽, 인쇄 82~83쪽"
+  }
+}
