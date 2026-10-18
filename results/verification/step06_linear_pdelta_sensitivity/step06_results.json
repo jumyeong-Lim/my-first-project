@@ -1,0 +1,446 @@
+{
+  "units": {
+    "force": "kN",
+    "length": "m",
+    "time": "s"
+  },
+  "assumed_inputs": {
+    "frame": {
+      "elastic_modulus": 200000000.0,
+      "bay_width": 6.0,
+      "story_height": 4.0,
+      "beam": {
+        "area": 0.01,
+        "second_moment_of_area": 0.0002
+      },
+      "column": {
+        "area": 0.02,
+        "second_moment_of_area": 0.0004
+      }
+    },
+    "step06_parameters": {
+      "stories": 3,
+      "bays": 3,
+      "floor_weights": [
+        200.0,
+        200.0,
+        200.0
+      ],
+      "gravity": 9.80665,
+      "gravity_factors": [
+        0.0,
+        0.5,
+        1.0,
+        1.5,
+        2.0
+      ],
+      "gravity_steps": 10,
+      "roof_reference_load": 1.0
+    },
+    "gravity_distribution": "Each floor weight is divided equally among its four frame nodes.",
+    "transformation_scope": "Linear or PDelta is assigned to columns; beams remain Linear.",
+    "pdelta_scope": "OpenSees PDelta transformation includes P-large-Delta but not P-small-delta effects."
+  },
+  "derived_values": {
+    "linear_g0.00": {
+      "transformation": "Linear",
+      "gravity_factor": 0.0,
+      "applied_gravity_load": 0.0,
+      "base_vertical_reaction": 0.0,
+      "gravity_reaction_error_percent": 0.0,
+      "average_roof_vertical_displacement": 0.0,
+      "roof_lateral_displacement_increment": 0.00018399128743471022,
+      "roof_tangent_stiffness": 5435.03996272026,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        176.23227446215768,
+        2114.904915796772,
+        7671.7383856482
+      ],
+      "periods": [
+        0.47330069829578686,
+        0.13662634333023657,
+        0.07173530945074606
+      ],
+      "mode_shapes": [
+        [
+          0.285284735016761,
+          0.7036860071605888,
+          1.0
+        ],
+        [
+          -1.1573021883684935,
+          -0.9519009118282805,
+          1.0
+        ],
+        [
+          3.050004644871086,
+          -2.6576054488534155,
+          1.0
+        ]
+      ]
+    },
+    "linear_g0.50": {
+      "transformation": "Linear",
+      "gravity_factor": 0.5,
+      "applied_gravity_load": 300.0,
+      "base_vertical_reaction": 299.99999999999994,
+      "gravity_reaction_error_percent": -1.8947806286936004e-14,
+      "average_roof_vertical_displacement": -0.00015,
+      "roof_lateral_displacement_increment": 0.0001839912874347102,
+      "roof_tangent_stiffness": 5435.0399627202605,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        176.23227446215768,
+        2114.904915796772,
+        7671.7383856482
+      ],
+      "periods": [
+        0.47330069829578686,
+        0.13662634333023657,
+        0.07173530945074606
+      ],
+      "mode_shapes": [
+        [
+          0.285284735016761,
+          0.7036860071605888,
+          1.0
+        ],
+        [
+          -1.1573021883684935,
+          -0.9519009118282805,
+          1.0
+        ],
+        [
+          3.050004644871086,
+          -2.6576054488534155,
+          1.0
+        ]
+      ]
+    },
+    "linear_g1.00": {
+      "transformation": "Linear",
+      "gravity_factor": 1.0,
+      "applied_gravity_load": 600.0,
+      "base_vertical_reaction": 599.9999999999999,
+      "gravity_reaction_error_percent": -1.8947806286936004e-14,
+      "average_roof_vertical_displacement": -0.0003,
+      "roof_lateral_displacement_increment": 0.00018399128743471022,
+      "roof_tangent_stiffness": 5435.03996272026,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        176.23227446215768,
+        2114.904915796772,
+        7671.7383856482
+      ],
+      "periods": [
+        0.47330069829578686,
+        0.13662634333023657,
+        0.07173530945074606
+      ],
+      "mode_shapes": [
+        [
+          0.285284735016761,
+          0.7036860071605888,
+          1.0
+        ],
+        [
+          -1.1573021883684935,
+          -0.9519009118282805,
+          1.0
+        ],
+        [
+          3.050004644871086,
+          -2.6576054488534155,
+          1.0
+        ]
+      ]
+    },
+    "linear_g1.50": {
+      "transformation": "Linear",
+      "gravity_factor": 1.5,
+      "applied_gravity_load": 900.0,
+      "base_vertical_reaction": 899.9999999999999,
+      "gravity_reaction_error_percent": -1.2631870857957336e-14,
+      "average_roof_vertical_displacement": -0.0004499999999999999,
+      "roof_lateral_displacement_increment": 0.00018399128743471022,
+      "roof_tangent_stiffness": 5435.03996272026,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        176.23227446215768,
+        2114.904915796772,
+        7671.7383856482
+      ],
+      "periods": [
+        0.47330069829578686,
+        0.13662634333023657,
+        0.07173530945074606
+      ],
+      "mode_shapes": [
+        [
+          0.285284735016761,
+          0.7036860071605888,
+          1.0
+        ],
+        [
+          -1.1573021883684935,
+          -0.9519009118282805,
+          1.0
+        ],
+        [
+          3.050004644871086,
+          -2.6576054488534155,
+          1.0
+        ]
+      ]
+    },
+    "linear_g2.00": {
+      "transformation": "Linear",
+      "gravity_factor": 2.0,
+      "applied_gravity_load": 1200.0,
+      "base_vertical_reaction": 1199.9999999999998,
+      "gravity_reaction_error_percent": -1.8947806286936004e-14,
+      "average_roof_vertical_displacement": -0.0006,
+      "roof_lateral_displacement_increment": 0.00018399128743471014,
+      "roof_tangent_stiffness": 5435.039962720262,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        176.23227446215768,
+        2114.904915796772,
+        7671.7383856482
+      ],
+      "periods": [
+        0.47330069829578686,
+        0.13662634333023657,
+        0.07173530945074606
+      ],
+      "mode_shapes": [
+        [
+          0.285284735016761,
+          0.7036860071605888,
+          1.0
+        ],
+        [
+          -1.1573021883684935,
+          -0.9519009118282805,
+          1.0
+        ],
+        [
+          3.050004644871086,
+          -2.6576054488534155,
+          1.0
+        ]
+      ]
+    },
+    "pdelta_g0.00": {
+      "transformation": "PDelta",
+      "gravity_factor": 0.0,
+      "applied_gravity_load": 0.0,
+      "base_vertical_reaction": 0.0,
+      "gravity_reaction_error_percent": 0.0,
+      "average_roof_vertical_displacement": 0.0,
+      "roof_lateral_displacement_increment": 0.00018399128743471022,
+      "roof_tangent_stiffness": 5435.03996272026,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        176.23227446215768,
+        2114.904915796772,
+        7671.7383856482
+      ],
+      "periods": [
+        0.47330069829578686,
+        0.13662634333023657,
+        0.07173530945074606
+      ],
+      "mode_shapes": [
+        [
+          0.285284735016761,
+          0.7036860071605888,
+          1.0
+        ],
+        [
+          -1.1573021883684935,
+          -0.9519009118282805,
+          1.0
+        ],
+        [
+          3.050004644871086,
+          -2.6576054488534155,
+          1.0
+        ]
+      ]
+    },
+    "pdelta_g0.50": {
+      "transformation": "PDelta",
+      "gravity_factor": 0.5,
+      "applied_gravity_load": 300.0,
+      "base_vertical_reaction": 299.99999999999994,
+      "gravity_reaction_error_percent": -1.8947806286936004e-14,
+      "average_roof_vertical_displacement": -0.00015,
+      "roof_lateral_displacement_increment": 0.00018451496805625556,
+      "roof_tangent_stiffness": 5419.614519810211,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        175.70191361171922,
+        2111.9162240629807,
+        7664.224956982444
+      ],
+      "periods": [
+        0.47401449535502993,
+        0.13672298297348626,
+        0.07177046278358266
+      ],
+      "mode_shapes": [
+        [
+          0.28532413196949297,
+          0.7037978527717695,
+          1.0
+        ],
+        [
+          -1.1574730356831056,
+          -0.9516155927130885,
+          1.0
+        ],
+        [
+          3.04803649729276,
+          -2.656555942076238,
+          1.0
+        ]
+      ]
+    },
+    "pdelta_g1.00": {
+      "transformation": "PDelta",
+      "gravity_factor": 1.0,
+      "applied_gravity_load": 600.0,
+      "base_vertical_reaction": 599.9999999999999,
+      "gravity_reaction_error_percent": -1.8947806286936004e-14,
+      "average_roof_vertical_displacement": -0.0003,
+      "roof_lateral_displacement_increment": 0.0001850417806136253,
+      "roof_tangent_stiffness": 5404.184918043133,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        175.17151804355515,
+        2108.927226821979,
+        7656.711868541607
+      ],
+      "periods": [
+        0.4747315787176759,
+        0.1368198378851717,
+        0.07180566625163975
+      ],
+      "mode_shapes": [
+        [
+          0.2853636334874365,
+          0.7039099168510955,
+          1.0
+        ],
+        [
+          -1.1576441308529526,
+          -0.951329777438038,
+          1.0
+        ],
+        [
+          3.0460669934035116,
+          -2.655505626978038,
+          1.0
+        ]
+      ]
+    },
+    "pdelta_g1.50": {
+      "transformation": "PDelta",
+      "gravity_factor": 1.5,
+      "applied_gravity_load": 900.0,
+      "base_vertical_reaction": 899.9999999999999,
+      "gravity_reaction_error_percent": -1.2631870857957336e-14,
+      "average_roof_vertical_displacement": -0.0004499999999999999,
+      "roof_lateral_displacement_increment": 0.00018557175376249978,
+      "roof_tangent_stiffness": 5388.7511419428065,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        174.64108766855014,
+        2105.937923314712,
+        7649.199121173875
+      ],
+      "periods": [
+        0.47545197372277836,
+        0.13691690888162475,
+        0.07184091997088105
+      ],
+      "mode_shapes": [
+        [
+          0.28540323999487094,
+          0.7040222000748144,
+          1.0
+        ],
+        [
+          -1.1578154742451314,
+          -0.9510434646280675,
+          1.0
+        ],
+        [
+          3.0440961321864237,
+          -2.654454502689289,
+          1.0
+        ]
+      ]
+    },
+    "pdelta_g2.00": {
+      "transformation": "PDelta",
+      "gravity_factor": 2.0,
+      "applied_gravity_load": 1200.0,
+      "base_vertical_reaction": 1199.9999999999998,
+      "gravity_reaction_error_percent": -1.8947806286936004e-14,
+      "average_roof_vertical_displacement": -0.0005999999999999998,
+      "roof_lateral_displacement_increment": 0.00018610491651140608,
+      "roof_tangent_stiffness": 5373.313175951005,
+      "total_input_mass": 61.1829727786757,
+      "total_free_mass_x": 61.18297277867571,
+      "mass_error_percent": 2.322681306547262e-14,
+      "eigenvalues": [
+        174.11062239727838,
+        2102.948312779742,
+        7641.686715730117
+      ],
+      "periods": [
+        0.47617570598368253,
+        0.1370141967835437,
+        0.07187622405763663
+      ],
+      "mode_shapes": [
+        [
+          0.2854429519184099,
+          0.7041347031221515,
+          1.0
+        ],
+        [
+          -1.1579870662263243,
+          -0.9507566529026293,
+          1.0
+        ],
+        [
+          3.0421239126250463,
+          -2.653402568339412,
+          1.0
+        ]
+      ]
+    }
+  }
+}

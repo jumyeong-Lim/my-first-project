@@ -1,0 +1,14 @@
+# Python caches and local environments
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# Temporary review, rendering, and downloaded working files
+/tmp/
+
+# Local secrets
+.env
+.env.*
+!.env.example
